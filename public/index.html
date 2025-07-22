@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOPEFUND Wallet - Download</title>
+  <style>
+    :root {
+      --primary: #ff6a00;
+      --secondary: #ffffff;
+      --dark: #1c1c1c;
+      --shadow: rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #ffffff, #f2f2f2);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px var(--shadow);
+      padding: 3rem 2rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      animation: floatIn 1s ease-out;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .headline {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .android-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 1rem auto;
+      fill: var(--primary);
+    }
+
+    .download-btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 15px rgba(255, 106, 0, 0.3);
+      transform: translateY(0);
+    }
+
+    .download-btn:hover {
+      background: #e95c00;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 20px rgba(255, 106, 0, 0.4);
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">HOPEFUND WALLET</div>
+    <div class="headline">Continue to HOPEFUND Wallet</div>
+    <div class="subtext">
+      Old and new users are required to access their account through the mobile app.<br>
+      Kindly download and install the HOPEFUND Wallet app to proceed securely.
+    </div>
+
+    <!-- Android Logo SVG -->
+    <svg class="android-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path d="M256 0C114.836 0 0 114.836 0 256s114.836 256 256 256 256-114.836 256-256S397.164 0 256 0zm76.8 416c-17.673 0-32-14.327-32-32V288h-64v96c0 17.673-14.327 32-32 32s-32-14.327-32-32v-96h-16c-17.673 0-32-14.327-32-32v-96c0-17.673 14.327-32 32-32h224c17.673 0 32 14.327 32 32v96c0 17.673-14.327 32-32 32h-16v96c0 17.673-14.327 32-32 32zM176 176a16 16 0 1116-16 16.018 16.018 0 01-16 16zm160 0a16 16 0 1116-16 16.018 16.018 0 01-16 16z"/>
+    </svg>
+
+    <a href="hopefundwallet.apk" download>
+      <button class="download-btn">Download App for Android</button>
+    </a>
+
+    <div class="footer">© 2025 HOPEFUND. All rights reserved.</div>
+  </div>
+</body>
+</html>
